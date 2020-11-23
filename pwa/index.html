@@ -8,8 +8,8 @@
 
     <!-- Manifest and Styles -->
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
 
     <!-- App Name -->
     <meta name="application-name" content="Lab 04 PWA" />
@@ -40,24 +40,28 @@
 
   </head>
 
-  <body class="fullscreen">
-    <div class="container">
-      <h1 class="title">Welcome to Lab 04 PWA!</h1>
-
-      <!-- Web Worker  -->
-      <h2>Web Worker</h2>
-      <button onclick="sendMessageToWebworker()">Post message 'hello'.</button>
-      <button onclick="askWebworkerForRecurringTask()">Post message 'recurring task'.</button>
-      <output class="webworker"></output>
-
-      <!-- Service Worker -->
-      <h2>Service Worker</h2>
-      <output class="serviceworker"></output>
+  <body class="fullscreen font-Montserrat start-screen-row-1">
+    <div class="container-fluid start-screen-container">
+        <div class="row justify-content-center">
+            <div class="col-5 col-sm-3 col-md-3 col-lg-2 col-xl-1">
+                <img src="img/juicee_logo.svg" alt="juicee-logo">
+            </div>
+        </div>
+        <div class="row justify-content-center start-screen-row-2">
+            <div class="col-6 text-center">
+                <h1 class="tc-title font-LeckerliOne start-screen-title">Juicee</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center start-screen-row-3 fixed-bottom">
+            <div class="col-8 text-center">
+                <button class="btn btn-primary tc-white bc-main-blue main-button" role="button">Ready to hydrate?</button>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->
-    <script src="js/use_webworker.js"></script>
     <script src="js/use_serviceworker.js"></script>
+    <script src="js/use_webworker.js"></script>
     <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
