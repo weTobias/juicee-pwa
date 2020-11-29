@@ -145,6 +145,7 @@
 
 .form-entry {
   background-color: #F6F6F6;
+  color: #9a9a9a;
 }
 
 
@@ -194,5 +195,18 @@ html,
 }
 
 .btn-grey {
+  border-radius: 300px;
+  color: #bdbdbd;
+  background-color: #e6e6e6;
+}
+
+.btn-active {
+  border-radius: 300px;
+  background-color: #f2f2f2;
+  color: #3d99d8;
+}
+
+.grey-btn-background{
+  background-color: #e6e6e6;
   border-radius: 300px;
 }
