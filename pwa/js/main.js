@@ -12,3 +12,19 @@ const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.n
 if (isIos() && !isInStandaloneMode()) {
     this.setState({ showInstallMessage: true });
 }
+function isNumber (value) {
+    return typeof value === 'number' && isFinite(value);
+}
+
+function inputScreenChangeWaterCount(value){
+    if(isNumber(value)){
+        var waterCountInput = document.getElementById('input-screen-water-count');
+        var waterCount = parseInt(waterCountInput.value);
+        waterCount += value;
+        if(waterCount < 0){
+            waterCount = 0;
+        }
+        waterCountInput.value = waterCount;
+    }
+
+}
