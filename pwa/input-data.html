@@ -1,112 +1,120 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Juicee</title>
+    <title>Juicee</title>
 
-  <!-- Manifest and Styles -->
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Manifest and Styles -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-  <!-- App Name -->
-  <meta name="application-name" content="Juicee" />
-  <meta name="apple-mobile-web-app-title" content="Juicee" />
+    <!-- App Name -->
+    <meta name="application-name" content="Juicee"/>
+    <meta name="apple-mobile-web-app-title" content="Juicee"/>
 
-  <!-- Capability -->
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Capability -->
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
 
-  <!-- Starting URL -->
-  <meta name="msapplication-starturl" content="/index.html" />
+    <!-- Starting URL -->
+    <meta name="msapplication-starturl" content="/index.html"/>
 
-  <!-- Theme/Display -->
-  <meta name="theme-color" content="#FBFBFB" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Theme/Display -->
+    <meta name="theme-color" content="#FBFBFB"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-  <!-- Icon for iOS 180x180 -->
-  <link rel="apple-touch-icon" href="img/touch-icon-iphone.png">
+    <!-- Icon for iOS 180x180 -->
+    <link rel="apple-touch-icon" href="img/touch-icon-iphone.png">
 
-  <!-- Splash Screens for iOS -->
-  <link href="img/apple_splash_2048.png" sizes="2048x2732" rel="apple-touch-startup-image" />
-  <link href="img/apple_splash_1668.png" sizes="1668x2224" rel="apple-touch-startup-image" />
-  <link href="img/apple_splash_1536.png" sizes="1536x2048" rel="apple-touch-startup-image" />
-  <link href="img/apple_splash_1125.png" sizes="1125x2436" rel="apple-touch-startup-image" />
-  <link href="img/apple_splash_1242.png" sizes="1242x2208" rel="apple-touch-startup-image" />
-  <link href="img/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
-  <link href="img/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" />
+    <!-- Splash Screens for iOS -->
+    <link href="img/apple_splash_2048.png" sizes="2048x2732" rel="apple-touch-startup-image"/>
+    <link href="img/apple_splash_1668.png" sizes="1668x2224" rel="apple-touch-startup-image"/>
+    <link href="img/apple_splash_1536.png" sizes="1536x2048" rel="apple-touch-startup-image"/>
+    <link href="img/apple_splash_1125.png" sizes="1125x2436" rel="apple-touch-startup-image"/>
+    <link href="img/apple_splash_1242.png" sizes="1242x2208" rel="apple-touch-startup-image"/>
+    <link href="img/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image"/>
+    <link href="img/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image"/>
 </head>
 
-<body class="fullscreen font-Montserrat">
-  <div class="container-fluid">
-    <div class="row pt-5 m-auto">
-      <div class="col-12 text-center">
-        <p class="input-screen-title tc-title">Please input your data</p>
-      </div>
-    </div>
-
-    <form>
-      <div class="col-10 m-auto p-2">
-        <input type="text" class="form-control form-entry p-4 " placeholder="Heigth (cm)">
-      </div>
-
-      <div class="col-10 m-auto p-2">
-        <input type="text" class="form-control form-entry p-4" placeholder="Weight (kg)">
-      </div>
-
-      <div class="col-10 m-auto p-2">
-        <input type="text" class="form-control form-entry p-4" placeholder="Age">
-      </div>
-      <div class="col-10 m-auto p-2">
-        <input type="text" class="form-control form-entry p-4" placeholder="Activity Level">
-      </div>
-    </form>
-
-    <div class="row mx-3">
-      <div class="col-10 m-auto d-inline-flex justify-content-center grey-btn-background p-0 ">
-        <button class="col-6 border-0 btn-active">
-          <div class="p-2">Male</div>
-        </button>
-
-        <button class="col-6 border-0 btn-grey">
-          <div class="p-2">Female</div>
-      </div>
-    </div>
-
-    <div class="row pt-4">
-      <div class="col-12 text-center">
-        <div>
-          <p class="m-0">How much did you drink today?</p>
-          <p>(250ml Glasses)</p>
+<body class="fullscreen font-Montserrat fw-500">
+<div class="container-fluid h-100">
+    <div class="d-flex flex-column h-100">
+        <div class="row pt-5 mx-auto">
+            <div class="col-12 text-center">
+                <p class="input-screen-title tc-title">Please input your data</p>
+            </div>
         </div>
-      </div>
+        <div class="row justify-content-center flex-grow-1">
+            <form class="col-10 d-flex flex-column">
+                <div class="form-group">
+                    <input type="text" class="form-control form-entry p-4" name="height" placeholder="Heigth (cm)">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control form-entry p-4" name="weight" placeholder="Weight (kg)">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control form-entry p-4" name="age" placeholder="Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-entry p-4" name="activity_level"
+                           placeholder="Activity Level">
+                </div>
+
+                <div class="form-group">
+                    <div class="gender-toggle-container btn-group d-flex justify-content-around">
+                        <input type="radio" class="gender-radio" id="male_toggle" name="gender" checked>
+                        <label for="male_toggle" class="m-0"><span class="m-0">Male</span></label>
+                        <input type="radio" class="gender-radio" id="female_toggle" name="gender">
+                        <label for="female_toggle" class="m-0"><span class="m-0">Female</span></label>
+                        <div class="toggle_option_slider"></div>
+                    </div>
+                </div>
+
+                <div class="form-group pt-3">
+                    <div class="row justify-content-around">
+                        <div class="col-12 p-0">
+                            <div class="text-center">
+                                <p>How much did you drink today?<br>
+                                    (250ml Glasses)</p>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="row justify-content-around text-center">
+                                <button type="button" class="col-3 btn-grey border-0 btn-grey-hover btn-grey-click"
+                                        onclick="inputScreenChangeWaterCount(-1)">
+                                    <span class="m-0">-</span>
+                                </button>
+                                <div class="col-4">
+                                    <input type="number" id="input-screen-water-count"
+                                           class="form-control p-0 text-center" name="water-count" value="0" readonly>
+                                </div>
+                                <button type="button" class=" col-3 btn-grey border-0 btn-grey-hover btn-grey-click"
+                                        onclick="inputScreenChangeWaterCount(1)">
+                                    <span class="m-0">+</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row flex-grow-1 justify-content-center">
+                    <div class="col-8 text-center align-self-center">
+                        <button type="submit" name="submit"
+                                class="btn btn-primary tc-white bc-main-blue main-button confirm-button" role="button">
+                            Confirm
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </div>
-
-    <div class="row text-center">
-      <button class="col-2 offset-2 btn-grey border-0">
-        <p class="m-0">-</p>
-      </button>
-      <div class="col-4">
-        <p>1</p>
-      </div>
-      <button class=" col-2 btn-grey border-0">
-        <p class="m-0">+</p>
-
-
-    </div>
-
-    <div class="row justify-content-center start-screen-row-3 fixed-bottom">
-      <div class="col-8 text-center">
-        <a href="">
-          <button class="btn btn-primary tc-white bc-main-blue main-button" role="button">Confirm</button>
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-  </div>
+</div>
+<script src="js/main.js"></script>
 </body>
 
 </html>
