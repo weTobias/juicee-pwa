@@ -28,6 +28,7 @@ var filesToCache = [
   'js/webworker.js',
   'js/main.js',
   'js/bootstrap.bundle.min.js',
+  'js/store_input_data.js',
   'fonts/leckerli-one-v11-latin-regular.eot',
   'fonts/leckerli-one-v11-latin-regular.svg',
   'fonts/leckerli-one-v11-latin-regular.ttf',
