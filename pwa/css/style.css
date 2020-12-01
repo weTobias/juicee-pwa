@@ -134,6 +134,10 @@
   background: #3D99D8;
 }
 
+.bc-main-black {
+  background-color: #4A595E;
+}
+
 /* font classes */
 .font-LeckerliOne {
   font-family: 'Leckerli One', sans-serif;
@@ -230,6 +234,28 @@ html,
   border-radius: 50px;
   background-color: #FEFEFE;
   color: #3D99D8;
+}
+
+.btn-main-active {
+  border-radius: 300px;
+  background-color: #343A40;
+}
+
+.btn-main-grey {
+  border-radius: 300px;
+  background-color: #C1CBD3;
+}
+
+.btn-dark-blue {
+  border-radius: 10px;
+  background-color: #328BC8;
+  color: #FBFBFB;
+}
+
+.btn-blue {
+  border-radius: 10px;
+  background-color: #3D99D8;
+  color: #FBFBFB;
 }
 
 .gender-toggle-container{
