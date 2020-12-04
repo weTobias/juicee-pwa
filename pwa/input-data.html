@@ -47,7 +47,7 @@
             </div>
         </div>
         <div class="row justify-content-center flex-grow-1">
-            <form class="col-10 d-flex flex-column">
+            <form class="col-10 d-flex flex-column" id="input-form">
                 <div class="form-group">
                     <input type="text" class="form-control form-entry p-4" name="height" placeholder="Heigth (cm)">
                 </div>
@@ -66,9 +66,9 @@
 
                 <div class="form-group">
                     <div class="gender-toggle-container btn-group d-flex justify-content-around">
-                        <input type="radio" class="gender-radio" id="male_toggle" name="gender" checked>
+                        <input type="radio" class="gender-radio" id="male_toggle" name="gender" value="male" checked>
                         <label for="male_toggle" class="m-0"><span class="m-0">Male</span></label>
-                        <input type="radio" class="gender-radio" id="female_toggle" name="gender">
+                        <input type="radio" class="gender-radio" id="female_toggle" name="gender" value="female">
                         <label for="female_toggle" class="m-0"><span class="m-0">Female</span></label>
                         <div class="toggle_option_slider"></div>
                     </div>
@@ -115,6 +115,7 @@
     </div>
 </div>
 <script src="js/main.js"></script>
+<script src="js/store_input_data.js"></script>
 </body>
 
 </html>
