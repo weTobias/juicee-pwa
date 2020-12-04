@@ -9,6 +9,7 @@ form.addEventListener('submit', function (event){
     });
     var json = JSON.stringify(object);
     console.log(json);
+    window.localStorage.setItem('userData', json);
     window.location.href = 'main.html';
 });
 
