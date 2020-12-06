@@ -41,10 +41,11 @@
 <body class="fullscreen font-Montserrat">
     <div class="container-fluid">
         <div class="row pb-5">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center pt-5">
                 <img src="img/circle.svg" alt="Cirlce">
             </div>
         </div>
+
         <div class="row pb-3">
             <div class="col-8 justify-content-center d-inline-flex m-auto">
                 <button class="col-1 btn-main-active p-3 border-0"></button>
@@ -55,27 +56,39 @@
         </div>
 
 
-        <div class="row bc-main-black pl-4 pr-4 h-50 d-flex pt-5">
-            <div class="col-5 text-center p-0 ">
-                <button class=" btn-dark-blue p-5 border-0 h-75 w-100 "></button>
+
+        <div class="row bc-main-black p-4 pb-5 h-50">
+            <div class="col-5 text-center p-0 align-self-center">
+                <button class="btn-add-drink border-0 h-75 w-100 ">
+                    <p>Add <br> Drink</p>
+                </button>
             </div>
-            <div class="col-7 m-0 p-0">
-                <div class="col-1 mw-100 text-center">
-                    <p class="m-0">Water:4 <br>(250 ml)</p>
-                </div>
-                <div class="col-3 p-0 mw-100  ">
-                    <button class="p-5 h-25 btn-blue border-0 w-100 "><p>+</p></button>
+            <div class="col-7 m-0 p-0 align-self-center">
+                <div class="text-center">
+                    <div class="d-inline-flex">
+                        <p class="m-0 water-number">Water <img src="img/Glass.svg" alt="">:</p>
+                        <p id="number" class="m-0 water-number pl-2">0</p>
+                    </div>
+
+                    <p class="m-0 water-ml">(250 ml)</p>
                 </div>
                 <div class="col-3 p-0 mw-100">
-                    <button class="p-5 h-25 btn-dark-blue border-0 w-100"><p>-</p></button>
+                    <button id="btn-plus" class="h-25 btn-plus border-0 w-100 ">
+                        <p>+</p>
+                    </button>
+                </div>
+                <div class="col-3 p-0 pb-5 mw-100 ">
+                    <button id="btn-minus" class="h-25 btn-minus border-0 w-100 ">
+                        <p>-</p>
+                    </button>
                 </div>
             </div>
         </div>
 
-        </div>
     </div>
     </div>
-
+    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

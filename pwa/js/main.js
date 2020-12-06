@@ -1,6 +1,9 @@
 /* MAIN */
 
 // Detects if device is on iOS
+
+var water = 0;
+
 const isIos = () => {
     const userAgent = window.navigator.userAgent.toLowerCase();
     return /iphone|ipad|ipod/.test( userAgent );
@@ -26,5 +29,16 @@ function inputScreenChangeWaterCount(value){
         }
         waterCountInput.value = waterCount;
     }
-
 }
+
+document.getElementById("btn-plus").addEventListener("click", function() {
+    water++;
+    document.getElementById("number").innerHTML = water;
+});
+
+document.getElementById("btn-minus").addEventListener("click", function() {
+    if(water!=0){
+       water--; 
+       document.getElementById("number").innerHTML = water;
+    }
+});
