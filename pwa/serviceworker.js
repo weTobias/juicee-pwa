@@ -21,6 +21,7 @@ var filesToCache = [
   'img/juicee-logo192.png',
   'img/juicee-logo512.png',
   'img/juicee_logo.svg',
+  'img/Glass.svg',
   'css/style.css',
   'css/bootstrap.min.css',
   'js/use_webworker.js',

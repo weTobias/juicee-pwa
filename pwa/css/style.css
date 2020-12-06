@@ -353,5 +353,10 @@ input[readonly]#input-screen-water-count{
 
 .water-number{
   color: #FBFBFB;
-  font-size: calc(1vw + 14px);
+  font-size: calc(2vw + 14px);
+}
+
+#number {
+  height: 30px;
+  width: 30px;
 }

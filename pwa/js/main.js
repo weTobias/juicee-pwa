@@ -42,3 +42,7 @@ document.getElementById("btn-minus").addEventListener("click", function() {
        document.getElementById("number").innerHTML = water;
     }
 });
+
+function doughnut(){
+   
+}
