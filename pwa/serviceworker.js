@@ -6,6 +6,7 @@ var filesToCache = [
   'index.html',
   'favicon.ico',
   'input-data.html',
+  'main.html',
   'img/apple_splash_640.png',
   'img/apple_splash_750.png',
   'img/apple_splash_1125.png',

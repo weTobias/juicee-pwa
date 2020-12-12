@@ -49,6 +49,7 @@
         </div>
 
         <div class="row pb-3">
+            <div class="carousel-item active"></div>
             <div class="col-8 justify-content-center d-inline-flex m-auto">
                 <button class="col-1 btn-main-active p-3 border-0"></button>
                 <button class="col-1 offset-1 btn-main-grey p-3 border-0"></button>
@@ -85,32 +86,13 @@
                 </div>
             </div>
         </div>
-
-    </div>
-    </div>
     </div>
 
     <script>
-        let myChart = document.getElementById('myChart');
-        var Chart = new Chart(myChart, {
-            type: 'doughnut',
-            data: {
-                labels: ['x', 'y', 'z', 'a'],
-                datasets: [{
-                    label: 'abc',
-                    data: [
-                        123,
-                        345,
-                        567,
-                        890
-                    ]
-                }]
-            },
-            options: {}
-        });
     </script>
 
     <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -360,3 +360,7 @@ input[readonly]#input-screen-water-count{
   height: 30px;
   width: 30px;
 }
+
+.carousel-item {
+  height: 10rem;
+}
