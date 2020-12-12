@@ -43,7 +43,7 @@ document.getElementById("btn-minus").addEventListener("click", function () {
     }
 });
 
-function generateChart() {
+/*function generateChart() {
     var LineChartCanvas = $("#line-chart-sample").get(0).getContext("2d");
     var LineChartSample = new Chart(LineChartCanvas);
 
@@ -84,7 +84,7 @@ function generateChart() {
     BarChartSample.Bar(BarChartSampleData);
 
     //Bar Chart Sample        
-    var DoughnutChartCanvas = $("#bar-chart").get(0).getContext("2d");
+    var DoughnutChartCanvas = $("#doughnut-chart").get(0).getContext("2d");
     var DoughnutChartSample = new Chart(DoughnutChartCanvas);
 
     var DoughnutChartSampleData = {
@@ -103,4 +103,27 @@ function generateChart() {
     };
     DoughnutChartSample.Doughnut(DoughnutChartSampleData);
 }
-generateChart();
+generateChart();*/
+
+//Bar Chart Sample  
+
+
+let DoughnutChartCanvas = document.getElementById("doughnut-chart").getContext("2d");
+var DoughnutChartSample = new Chart(DoughnutChartCanvas, {
+    type: 'doughnut',
+    data: {
+        labels: ["Water", "Sugar", "Vitamins"],
+        datasets: [
+            {
+                label: "BarChart",
+                data: [700, 500, 300,],
+                backgroundColor: [
+                    "#3D99D8",
+                    "#7FE0E3",
+                    "#FFE269",
+                ]
+            }
+        ]
+    }
+
+});

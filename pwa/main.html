@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juicee</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
-
     <!-- Manifest and Styles -->
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
 
     <!-- App Name -->
     <meta name="application-name" content="Juicee" />
@@ -42,14 +42,13 @@
 
 <body class="fullscreen font-Montserrat">
     <div class="container-fluid">
-        <div class="row pb-5">
-            <div class="col-12 text-center pt-5">
-                <canvas id="myChart"></canvas>
+        <div class="row pb-5 ">
+            <div class="col-12 pt-5">
+                <canvas id="doughnut-chart"></canvas>
             </div>
         </div>
 
         <div class="row pb-3">
-            <div class="carousel-item active"></div>
             <div class="col-8 justify-content-center d-inline-flex m-auto">
                 <button class="col-1 btn-main-active p-3 border-0"></button>
                 <button class="col-1 offset-1 btn-main-grey p-3 border-0"></button>
@@ -59,7 +58,7 @@
         </div>
 
 
-        <div class="row bc-main-black p-4 pb-5 h-50">
+        <div class="row bc-main-black p-4 pb-5">
             <div class="col-5 text-center p-0 align-self-center">
                 <button class="btn-add-drink border-0 h-75 w-100 ">
                     <p>Add <br> Drink</p>
@@ -88,11 +87,9 @@
         </div>
     </div>
 
-    <script>
-    </script>
-
     <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
