@@ -41,9 +41,10 @@
 </head>
 
 <body class="fullscreen font-Montserrat">
-    <div class="container-fluid">
-        <div class="row pb-5 ">
-            <div class="col-12 pt-5 h-50 ">
+    <div class="container-fluid flex-grow-1">
+        <div class="d-flex flex-column h-100">
+        <div class="row pb-4 ">
+            <div class="col-12 pt-5">
                 <canvas id="doughnut-chart"></canvas>
             </div>
         </div>
@@ -58,9 +59,9 @@
         </div>
 
 
-        <div class="row bc-main-black p-4 h-50 ">
-            <div class="col-5 text-center p-0 align-self-center">
-                <button class="btn-add-drink border-0 w-100 h-75">
+        <div class="row bc-main-black p-4 flex-grow-1">
+            <div class="col-5 text-center p-0 align-self-center h-75">
+                <button class="btn-add-drink border-0 w-100 h-100">
                     <p>Add <br> Drink</p>
                 </button>
             </div>
@@ -85,7 +86,7 @@
             </div>
         </div>
     </div>
-
+</div>
     <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
