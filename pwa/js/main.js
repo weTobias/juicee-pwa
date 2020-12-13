@@ -12,9 +12,10 @@ const isIos = () => {
 const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
 
 // Checks if should display install popup notification:
-if (isIos() && !isInStandaloneMode()) {
-    this.setState({ showInstallMessage: true });
-}
+// this is a react function and we currently have no idea how it works, however, because it throws an exception in the browser we deactivated it
+//if (isIos() && !isInStandaloneMode()) {
+//    this.setState({ showInstallMessage: true });
+//}
 function isNumber(value) {
     return typeof value === 'number' && isFinite(value);
 }
