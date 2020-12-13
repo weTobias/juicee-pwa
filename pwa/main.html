@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juicee</title>
+
+    <!-- Manifest and Styles -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+
+    <!-- App Name -->
+    <meta name="application-name" content="Juicee" />
+    <meta name="apple-mobile-web-app-title" content="Juicee" />
+
+    <!-- Capability -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Starting URL -->
+    <meta name="msapplication-starturl" content="/index.html" />
+
+    <!-- Theme/Display -->
+    <meta name="theme-color" content="#FBFBFB" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Icon for iOS 180x180 -->
+    <link rel="apple-touch-icon" href="img/touch-icon-iphone.png">
+
+    <!-- Splash Screens for iOS -->
+    <link href="img/apple_splash_2048.png" sizes="2048x2732" rel="apple-touch-startup-image" />
+    <link href="img/apple_splash_1668.png" sizes="1668x2224" rel="apple-touch-startup-image" />
+    <link href="img/apple_splash_1536.png" sizes="1536x2048" rel="apple-touch-startup-image" />
+    <link href="img/apple_splash_1125.png" sizes="1125x2436" rel="apple-touch-startup-image" />
+    <link href="img/apple_splash_1242.png" sizes="1242x2208" rel="apple-touch-startup-image" />
+    <link href="img/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
+    <link href="img/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" />
+</head>
+
+<body class="fullscreen font-Montserrat">
+    <div class="container-fluid">
+        <div class="row pb-5 ">
+            <div class="col-12 pt-5">
+                <canvas id="doughnut-chart"></canvas>
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="col-8 justify-content-center d-inline-flex m-auto">
+                <button class="col-1 btn-main-active p-3 border-0"></button>
+                <button class="col-1 offset-1 btn-main-grey p-3 border-0"></button>
+                <button class="col-1 offset-1 btn-main-grey p-3 border-0"></button>
+                <button class="col-1 offset-1 btn-main-grey p-3 border-0"></button>
+            </div>
+        </div>
+
+
+        <div class="row bc-main-black p-4 pb-5">
+            <div class="col-5 text-center p-0 align-self-center">
+                <button class="btn-add-drink border-0 h-75 w-100 ">
+                    <p>Add <br> Drink</p>
+                </button>
+            </div>
+            <div class="col-7 m-0 p-0 align-self-center">
+                <div class="text-center">
+                    <div class="d-inline-flex">
+                        <p class="m-0 water-number">Water <img src="img/Glass.svg" alt="">:</p>
+                        <p id="number" class="m-0 water-number pl-2">0</p>
+                    </div>
+
+                    <p class="m-0 water-ml">(250 ml)</p>
+                </div>
+                <div class="col-3 p-0 mw-100">
+                    <button id="btn-plus" class="h-25 btn-plus border-0 w-100 ">
+                        <p>+</p>
+                    </button>
+                </div>
+                <div class="col-3 p-0 pb-5 mw-100 ">
+                    <button id="btn-minus" class="h-25 btn-minus border-0 w-100 ">
+                        <p>-</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

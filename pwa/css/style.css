@@ -134,6 +134,11 @@
   background: #3D99D8;
 }
 
+.bc-main-black {
+  background-color: #4A595E;
+  height: 60%;
+}
+
 /* font classes */
 .font-LeckerliOne {
   font-family: 'Leckerli One', sans-serif;
@@ -232,6 +237,45 @@ html,
   color: #3D99D8;
 }
 
+.btn-main-active {
+  border-radius: 300px;
+  background-color: #343A40;
+}
+
+.btn-main-grey {
+  border-radius: 300px;
+  background-color: #C1CBD3;
+}
+
+.btn-dark-blue {
+  border-radius: 10px;
+  background-color: #3682B7;
+  color: #FBFBFB;
+  font-size: 7vh;
+}
+
+.btn-plus {
+  border-radius: 0px 10px 10px 0px;
+  background-color: #3D99D8;
+  color: #FBFBFB;
+  font-size: 7vh;
+}
+
+.btn-minus {
+  border-radius: 0px 10px 10px 0px;
+  background-color: #3682B7;
+  color: #FBFBFB;
+  font-size: 7vh;
+}
+
+
+.btn-add-drink {
+  border-radius: 10px;
+  background-color: #328BC8;
+  color: #FBFBFB;
+  font-size: 4vh;
+}
+
 .gender-toggle-container{
   position: relative;
   background-color: #F0F0F0;
@@ -301,4 +345,23 @@ input[readonly]#input-screen-water-count{
 
 .form-group{
   margin-bottom: 0.7rem;
+}
+
+.water-ml {
+  color: #FBFBFB;
+  font-size: calc(1vw + 10px);
+}
+
+.water-number{
+  color: #FBFBFB;
+  font-size: calc(2vw + 14px);
+}
+
+#number {
+  height: 30px;
+  width: 30px;
+}
+
+.carousel-item {
+  height: 10rem;
 }
