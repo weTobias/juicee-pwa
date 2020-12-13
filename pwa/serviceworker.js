@@ -74,6 +74,7 @@ self.addEventListener("install", event => {
 });
 
 self.addEventListener("activate", event => {
+  self.clients.claim();
   console.log("Service Worker Juicee activating.");
 });
 
